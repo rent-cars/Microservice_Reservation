@@ -57,5 +57,11 @@ public class ReservationsController {
     }
 
 
+    //Calcul prix final voiture
+    public Reservations finalPriceCar (int basicPriceCar, float kmPriceCar, int kmNumber) {
+        float sum = basicPriceCar + (kmPriceCar * kmNumber);
+        return float sum;
+    }
+
 
 }
