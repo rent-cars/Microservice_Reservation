@@ -11,6 +11,8 @@ import java.util.Date;
 public class Clients {
 
     private int id;
+
+    private int hello;
     private String firstName;
     private String lastName;
     private Date birthDate;
