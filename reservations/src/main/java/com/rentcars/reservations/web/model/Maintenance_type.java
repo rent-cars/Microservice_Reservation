@@ -8,17 +8,11 @@ import java.util.Date;
 
 public class Maintenance_type {
 
-    @GeneratedValue(strategy= GenerationType.AUTO)
     private int id;
-    @Size(min = 6,max = 15)
     private String vehicleType;
-    @Size(max = 25)
     private String name;
-    @Size(max = 11)
     private int maintenanceKm;
-    @Size(min = 1, max = 2)
     private int maintenanceYears;
-    @Size(max = 11)
     private int daysOff;
     @ManyToMany(mappedBy = "maintenance_types")
     private List<Maintenance_log> maintenance_logs;

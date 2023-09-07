@@ -8,10 +8,7 @@ package com.rentcars.reservations.web.model;
 // @JsonFilter("monFiltreDynamique")  // commenter pour pouvoir utiliser les autres méthodes qui n'ont pas de filtres
 
 
-@Entity
 public class Vehicles {
-
-    @Id
     private String registration;
     private String type;
     private String color;

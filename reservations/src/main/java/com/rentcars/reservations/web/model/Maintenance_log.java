@@ -11,9 +11,7 @@ public class Maintenance_log {
 
     @GeneratedValue(strategy= GenerationType.AUTO)
     private int id;
-    @Size(min = 6, max = 15)
     private String registrationVehicle;
-    @Size(max = 11)
     private int maintenanceKm;
     private Date maintenanceDate;
     @ManyToMany
