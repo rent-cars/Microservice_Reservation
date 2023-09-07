@@ -13,16 +13,20 @@ public class Reservations {
     private Date endDate;
     private int clientId;
     private String registrationVehicle;
+    private int nbKms;
+    private int currentPrice;
 
     public Reservations(){
             }
 
-    public Reservations(int id, Date startDate, Date endDate, int clientId, String registrationVehicle) {
+    public Reservations(int id, Date startDate, Date endDate, int clientId, String registrationVehicle, int nbKms, int currentPrice) {
         this.id = id;
         this.startDate = startDate;
         this.endDate = endDate;
         this.clientId = clientId;
         this.registrationVehicle = registrationVehicle;
+        this.nbKms = nbKms;
+        this.currentPrice = currentPrice;
     }
 
 
@@ -66,6 +70,16 @@ public class Reservations {
         this.registrationVehicle = registrationVehicle;
     }
 
+    public int getNbKms() {return nbKms;}
+    public void setNbKms(int nbKms) {
+        this.nbKms = nbKms;
+    }
+
+    public int getCurrentPrice() {return currentPrice;}
+    public void setCurrentPrice(int currentPrice) {
+        this.currentPrice = currentPrice;
+    }
+
     @Override
     public String toString(){
         return "Reservations{" +
@@ -74,6 +88,8 @@ public class Reservations {
                 ", date de fin='" + endDate +
                 ", identifiant client=" + clientId +
                 ", numéro d'identification du véhicule'" + registrationVehicle +
+                ", nombre de kilomètres'" + nbKms +
+                ", prix final estimatif'" + currentPrice +
                 '}';
     }
 
