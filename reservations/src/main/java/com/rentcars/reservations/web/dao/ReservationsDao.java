@@ -19,4 +19,9 @@ public interface ReservationsDao extends JpaRepository<Reservations, Integer> {
     Reservations findById(int id);
     Reservations save(Reservations reservations);
 
+
+
+    //Vu avec chaton : requête query dans repository
+    //requete db ,ici
+
 }
